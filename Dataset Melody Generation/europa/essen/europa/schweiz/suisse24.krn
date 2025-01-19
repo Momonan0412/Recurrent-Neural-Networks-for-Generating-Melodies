@@ -1,0 +1,66 @@
+!!!!SEGMENT: suisse24.krn
+!!!OTL@EN: Behind the giant in front of the giant
+!!!OTL@@DE: Hinterm Riesen vorn am Riesen
+!!!ARE: Europa, Mitteleuropa, Schweiz, Kanton Bern, Siebenthal
+!!!SCT: E1473A
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M3/8
+*k[f#]
+*G:
+=1
+{4dd
+16eeL
+16ddJ
+=2
+4dd
+16eeL
+16ddJ
+=3
+4dd
+16eeL
+16ddJ
+=4
+4dd
+16eeL
+16dd}J
+=5
+{4b
+8dd
+=6
+4g
+8a
+=7
+8bL
+8a
+8gJ
+=8
+8aL
+8d
+8d}J
+=9
+{8bL
+8g
+8gJ
+=10
+8aL
+8d
+8dJ
+=11
+8bL
+8g
+8gJ
+=12
+8aL
+8d
+8d}J
+==
+*-
+!!!AGN: Staende -, Hirten -, Alpen - Lied, Kuhreihen
+!!!ONB: ESAC (Essen Associative Code) Database: ERK3
+!!!AMT: simple triple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

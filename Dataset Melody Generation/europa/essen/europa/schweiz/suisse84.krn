@@ -1,0 +1,126 @@
+!!!!SEGMENT: suisse84.krn
+!!!OTL@EN: The Tannhaeuser Danuser was a wondrous boy,
+!!!OTL@@DE: Der Tannhaeuser Danuser war ein wundrige Knab,
+!!!ARE: Europa, Mitteleuropa, Schweiz, Kt. Luzern, Escholzmatt, Entlebuch
+!!!YOR: 1, S. 150
+!!    1912 aufgezeichnet
+!!!SCT: Q0015C
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+!! Mixed meters:  2/4; 3/4
+*M3/4
+*k[b-e-]
+*B-:
+{8f
+=1
+8.fL
+16gJ
+8.gL
+16fJ
+=2
+8fL
+16b-
+16b-J
+4.b-}
+{8a
+=3
+*M2/4
+8b-L
+8ccJ
+12.ddL
+24dd
+12ee-J
+=4
+*M3/4
+8ddL
+8ccJ
+4b-
+8r}
+{8f
+=5
+*M2/4
+8.fL
+16gJ
+8gL
+16f
+16fJ
+=6
+*M3/4
+8.fL
+16b-J
+4.b-}
+{8a
+=7
+8b-L
+8b-J
+8ccL
+8.ddJ
+16ddL
+8ee-J
+=8
+8ddL
+8ccJ
+4b-
+8r}
+{8a
+=9
+8b-L
+8ccJ
+4.dd
+8cc
+=10
+8b-L
+16a
+16aJ
+4g
+4r}
+=11
+{4.cc
+16ddL
+16ddJ
+16ccL
+16cc
+8b-J
+=12
+8aL
+8gJ
+4f
+8r}
+{8a
+=13
+8b-L
+16cc
+16ccJ
+4.dd
+8cc
+=14
+8b-L
+8aJ
+4g
+8r}
+{8cc
+=15
+4.cc
+16ffL
+16ffJ
+16ee-L
+16ee-
+8ccJ
+=16
+8b-L
+8aJ
+4b-
+8r}
+==
+*-
+!!!AGN: Ballade,  Wallfahrt, religioes
+!! Eine weitere Variante (S.161), die sich von diesem Lied nur durch die
+!!    (angeblich) falsche Takteinteilung unterscheidet, wurde nicht kodiert.
+!!    In der zweiten Zeile Triole eingefÅhrt (in der Notation = Dreiergruppe).
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: irregular
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

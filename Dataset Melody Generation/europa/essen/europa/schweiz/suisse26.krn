@@ -1,0 +1,123 @@
+!!!!SEGMENT: suisse26.krn
+!!!OTL@EN: Har little cow to the well
+!!!OTL@@DE: Har Chueli zum Brunne
+!!!ARE: Europa, Mitteleuropa, Schweiz, Bern
+!!!SCT: E1478
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M3/8
+*k[f#]
+*G:
+{8dd
+=1
+8ddL
+16dd
+16b
+8ddJ
+=2
+8ccL
+8a}
+{8ddJ
+=3
+8ddL
+16dd
+16b
+8ddJ
+=4
+8ccL
+8a}
+{8ddJ
+=5
+8aL
+8a
+16a
+16bJ
+=6
+8gL
+8g}
+{8ddJ
+=7
+8aL
+8a
+16a
+16bJ
+=8
+8gL
+8g}
+{8ddJ
+=9
+8aL
+8a
+8bJ
+=10
+4g}
+{8d
+=11
+8gL
+8g
+16g
+16aJ
+=12
+8bL
+8b
+16r}
+{16gJ
+=13
+8.bL
+16a
+16b
+16ccJ
+=14
+8ddL
+8dd}
+{8ddJ
+=15
+8ddL
+8dd
+8bJ
+=16
+8ccL
+8a}
+{8ddJ
+=17
+8ddL
+8dd
+8bJ
+=18
+8ccL
+8a}
+{8ddJ
+=19
+8aL
+8a
+8bJ
+=20
+8gL
+8g}
+{8ddJ
+=21
+8aL
+8a
+8bJ
+=22
+8gL
+8g}
+{8ddJ
+=23
+4a
+8a
+=24
+4b
+8b
+=25
+4g}
+==
+*-
+!!!AGN: Staende -, Hirten -, Alpen - Lied, Kuhreihen
+!!!ONB: ESAC (Essen Associative Code) Database: ERK3
+!!!AMT: simple triple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

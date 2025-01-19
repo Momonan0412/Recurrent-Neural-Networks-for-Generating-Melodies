@@ -1,0 +1,79 @@
+!!!!SEGMENT: czech24.krn
+!!!OTL@EN: The Innkeeper: "A gentleman rides with his horse"
+!!!OTL@@DE: Der Vorwirt Es ritt ein Herr mit seinem Ross
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Oesterreich - Schlesien
+!!!ARD1: Europa%Osteuropa%Ceska Republika@Oesterreich-Schlesien#?
+!!!ARL1: 50.16/17.00#?
+!!!ARD2: Europa%Osteuropa%Tschechoslowakei@
+!!!ARL2: 49.75/15.00@
+!!!YOR: 5, S. 16
+!!    1865 gedruckt in Troppau
+!!!SCT: Q0089E
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M3/4
+*k[f#]
+*G:
+{8d
+=1
+8gL
+8gJ
+8bL
+8aJ
+4g
+=2
+8aL
+8bJ
+4g
+8r}
+{8g
+=3
+8bL
+16dd
+16eeJ
+8ddL
+8ccJ
+4b
+=4
+16ddL
+16dd
+8ccJ
+4b
+8r}
+{8b
+=5
+8ddL
+16dd
+16eeJ
+8ddL
+8ccJ
+4b
+=6
+8ccL
+8bJ
+4a
+8r}
+{8g
+=7
+8bL
+16dd
+16eeJ
+8ddL
+8ccJ
+4b
+=8
+8ddL
+8ccJ
+4b
+8r}
+==
+*-
+!!!AGN: Ballade, Mord, Grab, Auferstehen, Geist
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple triple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

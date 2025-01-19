@@ -1,0 +1,68 @@
+!!!!SEGMENT: suisse04.krn
+!!!OTL@EN: In Aargau there are two sweethearts
+!!!OTL@@DE: Im Aergaeu sind zweu Liebi
+!!!ARE: Europa, Mitteleuropa, Schweiz
+!!!SCT: E0049
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#]
+*G:
+{16gL
+16aJ
+=1
+8bL
+8bJ
+8bL
+16a
+16bJ
+=2
+8ccL
+8aJ
+8r}
+{16aL
+16bJ
+=3
+8ccL
+8ccJ
+8ccL
+16b
+16ccJ
+=4
+8ddL
+8bJ
+8r}
+{16ccL
+16eeJ
+=5
+8ddL
+16b
+16bJ
+8ccL
+8aJ
+=6
+16bL
+16a
+16b
+16ccJ
+8b}L
+{16cc
+16eeJ
+=7
+8ddL
+16b
+16bJ
+8ccL
+8aJ
+=8
+4.b}
+==
+*-
+!!!AGN: erzaehlendes Volks - Lied, Sage, Mord, Ballade ?
+!!!ONB: ESAC (Essen Associative Code) Database: ERK1
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

@@ -1,0 +1,64 @@
+!!!!SEGMENT: suisse78.krn
+!!!OTL@EN: Echo - Yodel
+!!!OTL@@DE: Echo - Jodel
+!!!ARE: Europa, Mitteleuropa, Schweiz, Bern
+!!!SCT: D0101
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M3/4
+*k[f#]
+*G:
+{4.g
+8a
+4b
+=1
+2gg
+8.gL
+16eeJ
+=2
+2.dd}
+=3
+{4.b
+8gg
+4b
+=4
+4cc
+4.ff#
+8ee
+=5
+2.dd}
+=6
+{4.a
+8b
+4cc
+=7
+[2ff#
+8.ff#]L
+16eeJ
+=8
+2.dd}
+=9
+{4.cc
+8aa
+4cc
+=10
+4b
+4dd
+4gg
+=11
+[2bb
+8bb]L
+8aaJ
+=12
+2.gg}
+==
+*-
+!!!AGN: Jodler
+!! vollstaendig ?
+!!!ONB: ESAC (Essen Associative Code) Database: DVA
+!!!AMT: simple triple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

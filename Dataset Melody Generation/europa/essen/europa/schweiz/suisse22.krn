@@ -1,0 +1,82 @@
+!!!!SEGMENT: suisse22.krn
+!!!OTL@EN: My love is very far away
+!!!OTL@@DE: Mys Lieb isch gar wyt inne
+!!!ARE: Europa, Mitteleuropa, Schweiz, Emmental
+!!!SCT: E1472
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#]
+*G:
+{16bL
+16ccJ
+=1
+8.ddL
+16ccJ
+8bL
+16b
+16gJ
+=2
+8aL
+8aJ
+8r}
+{16bL
+16ccJ
+=3
+16ddL
+16dd
+16cc#
+16ddJ
+8bL
+16a
+16gJ
+=4
+4a
+8r}
+{16aL
+16gJ
+=5
+8f#L
+8dJ
+8gL
+8aJ
+=6
+16bL
+16a
+8gJ
+8r}
+{16bL
+16ccJ
+=7
+8.ddL
+16ccJ
+8bL
+8aJ
+=8
+4g}
+{8ddL
+16ee
+16cc#J
+=9
+8ddL
+16ee
+16cc#J
+8ddL
+16ee
+16cc#J
+=10
+4dd
+4g
+=11
+8gg
+4r}
+==
+*-
+!!!AGN: Staende -, Hirten -, Alpen - Lied, Kuhreihen
+!!!ONB: ESAC (Essen Associative Code) Database: ERK3
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

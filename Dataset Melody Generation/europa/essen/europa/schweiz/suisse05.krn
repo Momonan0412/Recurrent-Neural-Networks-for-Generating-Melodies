@@ -1,0 +1,66 @@
+!!!!SEGMENT: suisse05.krn
+!!!OTL@EN: There was a farmer who had a daughter
+!!!OTL@@DE: Es hat e Buur es Toechterli
+!!!ARE: Europa, Mitteleuropa, Schweiz
+!!!SCT: E0080
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[b-]
+*F:
+{8c
+=1
+8fL
+8gJ
+8aL
+8fJ
+=2
+4cc
+4g
+=3
+4f
+8r}
+{8cc
+=4
+8ccL
+8ddJ
+8eeL
+8ccJ
+=5
+4ff
+4dd
+=6
+4cc
+8r}
+{8cc
+=7
+8ffL
+8eeJ
+8ddL
+8ccJ
+=8
+8ffL
+8ddJ
+8cc}L
+{8cJ
+=9
+8fL
+8gJ
+8aL
+8b-J
+=10
+4cc
+4g
+=11
+4f
+8r}
+==
+*-
+!!!AGN: erzaehlendes Volks - Lied, Sage, Liebe, Ballade ?
+!!!ONB: ESAC (Essen Associative Code) Database: ERK1
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

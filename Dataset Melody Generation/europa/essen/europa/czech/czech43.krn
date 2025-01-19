@@ -1,0 +1,74 @@
+!!!!SEGMENT: czech43.krn
+!!!OTL@EN: The Count and the Nun: "You said you would take me"
+!!!OTL@@DE: Graf und Nonne (Die Nonne) Du hast gesagt, du nehmest mich,
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Kremnitz, Kuneschau
+!!!ARD1: Europa%Osteuropa%Tschechoslowakei@Kremnitz:Kuneschau!?
+!!!ARL1: ? / ?
+!!!ARD2: Europa%Osteuropa%Slovensko@Kremnitz:
+!!!ARL2: 48.70/18.91:
+!!!YOR: 8, S. 288
+!!    1938 gedruckt in Pressburg (ca.)
+!!!SCT: Q0155D.
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#]
+*G:
+{8d
+=1
+8bL
+8bJ
+8aL
+8aJ
+=2
+8gL
+8dJ
+8d}L
+{8dJ
+=3
+8bL
+8bJ
+8aL
+8aJ
+=4
+4b
+8r}
+{16gL
+16aJ
+=5
+8bL
+8bJ
+8bL
+8bJ
+=6
+4dd
+8cc}L
+{8bJ
+=7
+8bL
+8aJ
+8aL
+8aJ
+=8
+4ee
+8dd}L
+{8ccJ
+=9
+8bL
+8bJ
+8aL
+8aJ
+=10
+4g
+8r}
+==
+*-
+!!!AGN: Ballade, Standesunterschied, vergebliche Werbung, Liebes - Lied
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

@@ -1,0 +1,71 @@
+!!!!SEGMENT: czech33.krn
+!!!OTL@EN: The Girl and the Hazel: "A woman goes into the green forest"
+!!!OTL@@DE: Maedchen und Hasel Es geht ein' Frau in gruenen Wald
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Deutsch - Proben, Sprachinsel
+!!    Kremnitz, Glaserhaeu
+!!!ARD1: Europa%Osteuropa%Tschechoslowakei@Deutsch-Proben:Sprachinsel Kremnitz!Glaserhaeu!?
+!!!ARL1: ? / ?
+!!!ARD2: Europa%Osteuropa%Slovensko@Deutsch-Proben:Sprachinsel Kremnitz!?
+!!!ARL2: 48.70/18.91!?
+!!!ARD3: Europa%Osteuropa%Slovensko@Deutsch-Proben:
+!!!ARL3: 48.86/18.63:
+!!!YOR: 6, S. 245
+!!    1930 aufgezeichnet
+!!!SCT: Q0138C
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+!! Mixed meters:  3/4; 4/4
+*M3/4
+*k[f#]
+*e:
+{8eL
+8eJ
+8gn
+=1
+4.b
+8a#
+8bL
+8ccnJ
+=2
+*M4/4
+4a
+4r}
+{8ddnL
+8cc#J
+8ddnL
+8eeJ
+=3
+*M3/4
+4ddn
+4b}
+{8.bL
+16bJ
+=4
+4.ddn
+8b
+8.ddnL
+16ddnJ
+=5
+4.gn}
+{8a
+8bL
+8bJ
+=6
+4.gn
+8b
+8aL
+8gnJ
+=7
+4e
+8r}
+==
+*-
+!!!AGN: Ballade, verlorene Unschuld, Moral
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: irregular
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

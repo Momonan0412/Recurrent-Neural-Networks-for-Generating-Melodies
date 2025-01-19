@@ -1,0 +1,83 @@
+!!!!SEGMENT: suisse03.krn
+!!!OTL@EN: "The Grinder" A strange grinder comes
+!!!OTL@@DE: "Der Schleifer" Es chummt e froemde Schlifer
+!!!ARE: Europa, Mitteleuropa, Schweiz
+!!!SCT: Z1334
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#c#g#]
+*A:
+{16aL
+16bJ
+=1
+8cc#L
+16cc#
+16bJ
+8aL
+16a
+16bJ
+=2
+8cc#L
+16cc#
+16bJ
+8a}L
+{8bJ
+=3
+8cc#L
+8ddJ
+8eeL
+16dd
+16cc#J
+=4
+8bL
+8bJ
+8b
+8r}
+=5
+{8bL
+16b
+16cc#J
+16bL
+16cc#
+16b
+16ddJ
+=6
+8bL
+8cc#J
+8b}L
+{16a
+16bJ
+=7
+8cc#L
+8eeJ
+8cc#L
+8aJ
+=8
+8bL
+16b
+16cc#J
+8b}L
+{16a
+16bJ
+=9
+8cc#L
+16ee
+16cc#J
+8aL
+8bJ
+=10
+8cc#L
+16ee
+16cc#J
+8a}
+==
+*-
+!!!AGN: Zech -, Schalks - Lied
+!!!ONB: ESAC (Essen Associative Code) Database: ZUCCAL
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

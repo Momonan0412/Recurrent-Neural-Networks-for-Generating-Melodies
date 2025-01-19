@@ -1,0 +1,69 @@
+!!!!SEGMENT: suisse62.krn
+!!!OTL@EN: The Night Hunter There is a little lime tree in a valley
+!!!OTL@@DE: Der Nachtjaeger Es stot es Lindeli in einem Tal
+!!!ARE: Europa, Mitteleuropa, Schweiz, Aargau
+!!!YOR: 6, S. 188
+!!    1911 gedruckt in Basel
+!!!SCT: Q0133H
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M4/4
+*k[b-]
+*F:
+{4f
+=1
+4.a
+8g
+8.fL
+16aJ
+8aL
+8ccJ
+=2
+8ccL
+8aJ
+8ccL
+8aJ
+4g
+8r}
+{16fL
+16gJ
+=3
+4a
+8aL
+8ccJ
+8.b-L
+16b-J
+8b-L
+8ddJ
+=4
+4cc
+8ccL
+8b-J
+4a
+8r}
+{8a
+=5
+4cc
+4cc
+8ccL
+8b-J
+8b-L
+8gJ
+=6
+4a
+4cc
+4g
+4b-
+=7
+2a
+4r}
+==
+*-
+!!!AGN: Ballade, Jagd, Flucht, Vergewaltigung, Tod
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple quadruple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

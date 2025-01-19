@@ -1,0 +1,115 @@
+!!!!SEGMENT: suisse19.krn
+!!!OTL@EN: Around eleven o'clock I want a flee
+!!!OTL@@DE: Ids Elfis abe wott e Flohnes
+!!!ARE: Europa, Mitteleuropa, Schweiz
+!!!SCT: E1095
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+!! Mixed meters:  2/4; 3/8
+*M2/4
+*k[f#c#g#]
+*A:
+{16cc#L
+16bJ
+=1
+8aL
+8aJ
+8aL
+8eJ
+=2
+4a
+4b
+=3
+*M3/8
+4cc#
+8r}
+=4
+{16cc#L
+16bJ
+=5
+*M2/4
+8aL
+8aJ
+8aL
+8eJ
+=6
+4a
+4b
+=7
+*M3/8
+4cc#
+8r}
+=8
+{16aL
+16bJ
+=9
+*M2/4
+8cc#L
+16cc#
+16ddJ
+8eeL
+16dd
+16cc#J
+=10
+*M3/8
+8bL
+8eJ
+8r}
+=11
+{16cc#L
+16ddJ
+=12
+*M2/4
+4ee
+4cc#
+=13
+8ddL
+16ee
+16ddJ
+8cc#L
+8bJ
+=14
+*M3/8
+4cc#
+8r}
+=15
+{8b
+=16
+*M2/4
+8.aL
+16bJ
+8cc#L
+16dd#
+16dd#J
+=17
+*M3/8
+8eeL
+8eJ
+8r}
+=18
+{16cc#L
+16eeJ
+=19
+8.eeL
+16ff#
+16ee
+16ddJ
+=20
+8.cc#L
+16b
+8aJ
+=21
+4b
+8cc#
+=22
+4a}
+==
+*-
+!!!AGN: Wunsch - Lied, Luegen - Maerchen, Schlaraffenland
+!!!ONB: ESAC (Essen Associative Code) Database: ERK3
+!!!AMT: irregular
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

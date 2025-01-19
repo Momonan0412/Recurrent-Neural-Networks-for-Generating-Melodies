@@ -1,0 +1,74 @@
+!!!!SEGMENT: czech32.krn
+!!!OTL@EN: The Night Hunter: "The hunter, he hunted a wild, wild boar"
+!!!OTL@@DE: Der Nachtjaeger Der Jaeger, er jagte ein wueldes, wueldes Schwein,
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Boehmerwald, Muttersdorf
+!!!ARD: Europa%Osteuropa%Ceska Republika@Boehmerwald#Muttersdorf:
+!!!ARL: 49.55/12.75:
+!!!YOR: 6, S. 168
+!!    1961 aufgezeichnet
+!!!SCT: Q0133E
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M4/4
+*k[f#]
+*G:
+{8dd
+=1
+4dd
+8bL
+8ggJ
+4gg
+8.ff#L
+16eeJ
+=2
+8.eeL
+16ddJ
+8ddL
+8ggJ
+4dd
+8r}
+{8b
+=3
+8.bL
+16aJ
+8aL
+8eeJ
+4ee
+8ddL
+8aJ
+=4
+8.ccL
+16bJ
+8bL
+8eeJ
+4dd
+8r}
+{8dd
+=5
+8.ggL
+16ggJ
+8ggL
+8bbJ
+8aaL
+8bbJ
+8cccL
+8aaJ
+=6
+8ff#L
+8ddJ
+8eeL
+8ff#J
+4gg
+8r}
+==
+*-
+!!!AGN: Ballade, Jagd, Flucht, Vergewaltigung, Tod
+!! Verzierungen (Glissandi) .
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple quadruple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

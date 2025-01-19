@@ -1,0 +1,95 @@
+!!!!SEGMENT: suisse82.krn
+!!!OTL@EN: Tired, a wanderer returns back to the homeland longing for a glimpse
+!!!OTL@@DE: Muede kehrt ein Wandersmann zurueck nach der Heimat sehnt sich seinen Blick
+!!!ARE: Europa, Mitteleuropa, Schweiz, Graubuenden, Tenna
+!!!SCT: D1005
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M4/4
+*k[f#]
+*G:
+{8.dL
+16gJ
+=1
+4.b
+8a
+8gL
+8gJ
+8gL
+8bJ
+=2
+2d
+4r}
+{8dL
+8gJ
+=3
+4.a
+8g
+8f#L
+8aJ
+8ccL
+8bJ
+=4
+2g}
+{8dL
+8gJ
+8bL
+8ddJ
+=5
+2dd
+8ccL
+8bJ
+8aL
+8gJ
+=6
+2e
+4r}
+{8gL
+8eJ
+=7
+8dL
+8gJ
+4g
+8f#L
+8aJ
+8ccL
+8bJ
+=8
+2g}
+{8dL
+8gJ
+8bL
+8ddJ
+=9
+2dd
+8ccL
+8bJ
+8aL
+8gJ
+=10
+2e
+4r}
+{8gL
+8eJ
+=11
+8dL
+8gJ
+4g
+8f#L
+8aJ
+8ccL
+8bJ
+=12
+2g
+4r}
+==
+*-
+!!!AGN: Liebes - Lied
+!! DVA-Signatur A 28 158
+!!!ONB: ESAC (Essen Associative Code) Database: DVA
+!!!AMT: simple quadruple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

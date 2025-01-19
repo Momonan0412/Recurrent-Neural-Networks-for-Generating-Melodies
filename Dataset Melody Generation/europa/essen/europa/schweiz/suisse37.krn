@@ -1,0 +1,64 @@
+!!!!SEGMENT: suisse37.krn
+!!!OTL@EN: "The Wish" It hasn't been long since it rained
+!!!OTL@@DE: "Der Wunsch" Es is nit lang, dass g'regnet hat
+!!!ARE: Europa, Mitteleuropa, Schweiz
+!!!SCT: Z1254
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#]
+*G:
+{16bL
+16ccJ
+=1
+8ddL
+8bJ
+8ccL
+8aJ
+=2
+16bL
+16a
+16b
+16ccJ
+8b}L
+{16b
+16ccJ
+=3
+8ddL
+8bJ
+8ccL
+8aJ
+=4
+4b
+8r}
+{8b
+=5
+8.bL
+16aJ
+8aL
+8ccJ
+=6
+8.ccL
+16bJ
+8b}L
+{8ddJ
+=7
+8ggL
+8ddJ
+16bL
+16dd
+16cc
+16aJ
+=8
+4g
+8r}
+==
+*-
+!!!AGN: Liebes - Lied, verlassene Liebe
+!!!ONB: ESAC (Essen Associative Code) Database: ZUCCAL
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

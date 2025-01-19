@@ -1,0 +1,68 @@
+!!!!SEGMENT: czech01.krn
+!!!OTL@EN: The Seamstress: "She sits, a seamstress sewing"
+!!!OTL@@DE: Die Naehterin 's sass a Naehterin und sie naeht,
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Sudetenland, Kuhlaendchen
+!!!ARD: Europa%Osteuropa%Ceska Republika@Kuhlaendchen#
+!!!ARL: 49.66/18.00#
+!!!YOR: 1, S. 75
+!!    1840 gedruckt in Berlin
+!!!SCT: Q0008A
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[f#]
+*G:
+=1
+{8gL
+8gJ
+16gL
+16g
+8gJ
+=2
+4cc
+4a
+=3
+4b
+4r}
+=4
+{8ccL
+8ddJ
+16eeL
+16ee
+8ddJ
+=5
+8ccL
+8ccJ
+8cc}L
+{8fnJ
+=6
+8gL
+8aJ
+8bL
+8ddJ
+=7
+8.aL
+16aJ
+4fn
+=8
+4g
+8r}
+{8dd
+=9
+8.ccL
+16ccJ
+4fn
+=10
+4g
+4r}
+==
+*-
+!!!AGN: Ballade, Geburt, Tod, Moral, Entfuehrung
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

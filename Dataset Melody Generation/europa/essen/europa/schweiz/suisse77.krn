@@ -1,0 +1,68 @@
+!!!!SEGMENT: suisse77.krn
+!!!OTL@EN: Easter song
+!!!OTL@@DE: Eischterliedji
+!!!ARE: Europa, Mitteleuropa,Schweiz, Kt. Wallis, Brigersberg
+!!!SCT: D0092
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M4/4
+*k[f#]
+*G:
+{8.gL
+16aJ
+=1
+4b
+4b
+8.bL
+16aJ
+8.bL
+16ccJ
+=2
+4dd
+4dd
+4r}
+{8.eeL
+16ddJ
+=3
+4dd
+4cc
+8eeL
+8ddJ
+4cc
+=4
+2b
+4r}
+{8.gL
+16aJ
+=5
+4b
+4b
+8.bL
+16aJ
+8.bL
+16ccJ
+=6
+4dd
+4dd
+4r}
+{8.eeL
+16ddJ
+=7
+4dd
+4cc
+8eeL
+8ddJ
+4cc
+=8
+2b
+4r}
+==
+*-
+!!!AGN: Jodel - Lied
+!!!ONB: ESAC (Essen Associative Code) Database: DVA
+!!!AMT: simple quadruple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1

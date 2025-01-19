@@ -1,0 +1,62 @@
+!!!!SEGMENT: czech07.krn
+!!!OTL@EN: The Kidnapped Shepherdess: "A maiden grazed, pretty and fine"
+!!!OTL@@DE: Die entfuehrte Graserin Es graste eine Jungfrau huebsch und fein
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Boehmen, Deutsch - Gabel
+!!!ARD: Europa%Osteuropa%Ceska Republika@Deutsch-Gabel:
+!!!ARL: 50.76/14.78:
+!!!YOR: 2, S. 147
+!!    1911 gedruckt
+!!!SCT: Q0045
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M4/4
+*k[f#]
+*G:
+{4d
+=1
+8.gL
+16gJ
+8gL
+8gJ
+4b
+8ddL
+8bJ
+=2
+4.a
+8g
+4g}
+{4a
+=3
+8bL
+8aJ
+8gL
+8f#J
+4e
+8f#L
+8gJ
+=4
+4f#
+4e
+4d}
+{4d
+=5
+4g
+4g
+4a
+8bL
+8ddJ
+=6
+4.a
+8g
+4g}
+==
+*-
+!!!AGN: Ballade, Pastorelle, Entfuehrung, Tod
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple quadruple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

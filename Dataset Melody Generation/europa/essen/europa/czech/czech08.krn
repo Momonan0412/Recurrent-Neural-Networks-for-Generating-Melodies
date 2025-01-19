@@ -1,0 +1,63 @@
+!!!!SEGMENT: czech08.krn
+!!!OTL@EN: The Rhine Bride: "There once was a water man"
+!!!OTL@@DE: Die Rheinbraut Es war einmal ein Wassermann,
+!!!ARE: Europa, Osteuropa, Tschechoslowakei, Ost - Boehmen
+!!!ARD1: Europa%Osteuropa%Tschechoslowakei@Ost-Boehmen#?
+!!!ARL1: ? / ?
+!!!ARD2: Europa%Osteuropa%Tschechoslowakei@
+!!!ARL2: 49.75/15.00@
+!!!YOR: 2, S. 187
+!!    1907 aufgezeichnet
+!!!SCT: Q0047H
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M2/4
+*k[b-]
+*F:
+{8cc
+=1
+8ffL
+8ffJ
+8eeL
+8ddJ
+=2
+8ddL
+8ccJ
+8cc}L
+{8ccJ
+=3
+8ffL
+8ccJ
+8ccL
+8b-J
+=4
+8b-L
+8aJ
+8a}L
+{8gJ
+=5
+4a
+4b-
+=6
+8ccL
+8ffJ
+8ddL
+8b-J
+=7
+4a
+4g
+=8
+4f
+8r}
+==
+*-
+!!!AGN: Ballade, Braut - Werbung, Todesahnung, Tod
+!! Pause im Schlusstakt korrigiert.
+!!!ONB: ESAC (Essen Associative Code) Database: BALLADE
+!!!AMT: simple duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
+!!!title: @{OTL} [@{SCT}]

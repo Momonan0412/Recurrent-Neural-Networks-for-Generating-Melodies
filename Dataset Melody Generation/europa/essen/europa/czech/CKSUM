@@ -1,0 +1,67 @@
+CHEKSUMS for files from /essen/europa/czech
+at https://kern.humdrum.org
+downloaded on Fri Jan 17 19:03:23 PST 2025
+A current version of these files may be downloaded using the address:
+	https://kern.humdrum.org/data?f=zip&l=/essen/europa/czech
+==================================================================
+
+The following lines list the checksum values for all score
+files in this downloaded zip archive.
+
+A "checksum" value is an error-checking mechanism that may
+assist in determining whether a file has been modified or data
+garbled due to transmission or faulty storage.  The "checksum A"
+value uses the POSIX 2 checksum algorithm.  The "checksum B" value
+uses the CCITT cyclic redundancy check algorithm.
+
+Note that checksum commands will differ for ASCII files formatted
+in DOS/Windows style or Unix/Macintosh formatted text.  The files in
+this ZIP archive were in Unix/Macintosh line formatting style when the
+checksums were compiled.
+
+checksum A   checksum B    filename
+===================================================================
+
+911613289 834 czech01.krn
+446778815 840 czech02.krn
+2373151611 866 czech03.krn
+4110227503 994 czech04.krn
+1332179331 867 czech05.krn
+1553611736 826 czech06.krn
+764589357 813 czech07.krn
+4036018936 880 czech08.krn
+579092303 805 czech09.krn
+3345664505 988 czech10.krn
+3447058459 981 czech11.krn
+427231124 801 czech12.krn
+2891757956 823 czech13.krn
+2488851548 782 czech14.krn
+1244745888 858 czech15.krn
+1267288908 823 czech16.krn
+801078849 917 czech17.krn
+2924062090 963 czech18.krn
+2706574260 972 czech19.krn
+4201063253 912 czech20.krn
+2675453805 867 czech21.krn
+3492265285 883 czech22.krn
+1749525428 958 czech23.krn
+127469111 943 czech24.krn
+2593710255 841 czech25.krn
+1959999872 797 czech26.krn
+2648594334 699 czech27.krn
+1705615172 995 czech28.krn
+3900157804 883 czech29.krn
+117822830 723 czech30.krn
+3421596491 818 czech31.krn
+3023908896 949 czech32.krn
+2444832041 1096 czech33.krn
+3333741894 778 czech34.krn
+1262961643 1141 czech35.krn
+4166386744 905 czech36.krn
+4180073599 1063 czech37.krn
+3239454381 930 czech38.krn
+678709275 881 czech39.krn
+900091637 819 czech40.krn
+2315689259 1075 czech41.krn
+1086195281 933 czech42.krn
+832141078 955 czech43.krn

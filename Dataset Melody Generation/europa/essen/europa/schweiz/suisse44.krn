@@ -1,0 +1,76 @@
+!!!!SEGMENT: suisse44.krn
+!!!OTL@EN: "Cowherd's Song" It's very merry in Basel
+!!!OTL@@DE: "Kuhreigen" Z' Basel is gar grueeli lusti
+!!!ARE: Europa, Mitteleuropa, Schweiz, Basel
+!!!SCT: Z1307
+!!!YEM: Copyright 1995, estate of Helmut Schaffrath.
+**kern
+*ICvox
+*Ivox
+*M6/8
+*k[b-]
+*F:
+{4f
+8a
+4cc
+8dd
+=1
+4cc
+8b-
+4a
+8f}
+=2
+{8fL
+8a
+8b-J
+4cc
+8dd
+=3
+8ccL
+8b-
+8aJ
+4a
+8g}
+=4
+{8gL
+8a
+8bnJ
+4cc
+8ee
+=5
+8bnL
+8a
+8bnJ
+4.cc}
+=6
+{8ccL
+8ee
+8ffJ
+8ggL
+8aa
+8ggJ
+=7
+8ffL
+8a
+8bnJ
+4cc}
+{8ee
+=8
+8ddL
+8a
+8bnJ
+4cc
+8ee
+=9
+8ddL
+8a
+8bnJ
+4.cc}
+==
+*-
+!!!AGN: Handwerker -, Bauern - Lied
+!!!ONB: ESAC (Essen Associative Code) Database: ZUCCAL
+!!!AMT: compound duple
+!!!AIN: vox
+!!!EED: Helmut Schaffrath
+!!!EEV: 1.1
