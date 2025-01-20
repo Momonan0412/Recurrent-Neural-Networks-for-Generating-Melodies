@@ -1,4 +1,5 @@
 DATASET_PATH = "Dataset Melody Generation\\misc_asia" # Dataset Path
+SAVE_DIRECTORY = "Processed Dataset"
 ACCEPTABLE_DURATIONS = [ # Acceptable Note Duration
     0.25, # 16th Note
     0.5, # 8th Note
@@ -9,3 +10,4 @@ ACCEPTABLE_DURATIONS = [ # Acceptable Note Duration
     3.0, # 3 Quarter Notes
     4.0  # Whole Note
 ]
+TIME_STEP = 0.25 # 16th Note, using the #2 Idea in preprocessing.

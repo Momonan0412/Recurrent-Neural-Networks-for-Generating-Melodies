@@ -83,17 +83,17 @@ A complete MIDI note chart can be found at [this reference](https://audiodev.blo
 1. **Concept of Key**: The neural network learns the key (like Cmaj or Amin) to understand how notes relate to each other.
 2. **Melody Generation**: It learns to create melodies that feel coherent by recognizing tension and release (movement between notes and rest) in music.
 
-### Initial Preprocessing Steps
-- **Step 1**: Represent a melody as a sequence of notes:
+### Preprocessing Steps
+- **Idea 1**: Represent a melody as a sequence of notes:
   - Each note has pitch and duration.
   - Example: [(C4, 1), (D4, 1), (E4, 0.5), (E4, 0.5), (rest, 1)]
 
-- **Step 2 (Time Series Representation)**:
+- **Idea 2 (Time Series Representation)**:
   - Sample the melody at each **16th note** interval.
   - Each time step represents one 16th note.
   - Use **MIDI numbers** for notes, **"_"** to extend a note, and **"r"** for rest.
 
-#### Example of Time Series Encoding (4/4 Time Signature)
+#### Example of Time Series Encoding (4/4 Time Signature) of Idea 2
 - A 4/4 bar has 16 16th notes (4 beats × 4):
 
 ```

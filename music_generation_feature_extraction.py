@@ -1,5 +1,5 @@
 import os as operating_system
-from music21 import converter, note, chord, meter, tempo, pitch, stream, key, interval
+from music21 import converter, note, chord, meter, tempo, pitch, stream, key, interval, bar
 from constants import *
 
 class MelodyFeatureExtraction:
@@ -80,7 +80,20 @@ class MelodyFeatureExtraction:
         if not isinstance(key_signature, key.Key):
             key_signature = self._guess_song_key(song)
         return key_signature
+        
+    """Provides a key `Guess` of the passed song!"""
+    def _guess_song_key(self, song):
+        key = song.analyze('key')
+        # print(f"Key: {key}")
+        # tonal_certainty_percentage = key.tonalCertainty() * 100
+        # print(f"Tonal Certainty: {tonal_certainty_percentage:.1f}%")
+        return key
     
+    def _get_song_time_signature(self, song):
+        # return song.recurse().getElementsByClass(meter.TimeSignature)[0]
+        for ts in song.recurse().getElementsByClass(meter.TimeSignature):
+            print(f"Time Signature: {ts.ratioString}")
+            
     """
     Using:
     'X'maj => Cmaj,
@@ -93,33 +106,80 @@ class MelodyFeatureExtraction:
             key_interval = interval.Interval(_key_signature.tonic, pitch.Pitch("A"))
         transposed_song = _song.transpose(key_interval)
         return transposed_song
+
+    def _get_bar_numbers(self, song):
+        barlines = song.recurse().getElementsByClass(bar.Barline)
+        if barlines:
+            print(f"Found {len(barlines)} barlines in the song.")
+        else:
+            print("No barlines found in the song.")
+          
+    def _get_songs(self):
+        return self._songs
     
-    """Provides a key `Guess` of the passed song!"""
-    def _guess_song_key(self, song):
-        key = song.analyze('key')
-        # print(f"Key: {key}")
-        # tonal_certainty_percentage = key.tonalCertainty() * 100
-        # print(f"Tonal Certainty: {tonal_certainty_percentage:.1f}%")
-        return key
+    """
+    Note! This Caters to 4/4 Time Signature only!
+    TODO: Find A way filter and access the time signatre?
     
+    TODO: IMPLEMENT! OR FIND A WAY TO! TIME SIGNATURE MAKER? Or?
+    
+    Using the Idea #2 - A Time Series Representation
+    Using the 16th note's duration which is 0.25 as a time-step
+    Use MIDI numbers for notes, "_" to extend a note, and "r" for rest.
+    Format Example:
+        [
+            "60", "_", "_", "_",
+            "62", "_", "_", "_",
+            "64", "_", "64", "_",
+            "65", "_", "62", "_"
+        ]    
+    - MIDI numbers represent pitches (C4 = 60).
+    - The underscore "_" extends a note.
+    - "r" represents a rest.
+    
+    time_step == 16th note
+    """
+    def _encode_song_as_time_series(self, song):
+        # Example: Note with pitch = 60, duration = 1.0
+        # List[60,"_","_","_",] Where in the list each Item corresponds to a 16th note
+        # 4 * .25 = 1.0
+        # List[x,"_","_","_",] 16th note
+        # List[x,"_"] 8th note
+        # List[x] Whole note
+        encoded_song = []
+        for event in song.flat.notesAndRests:
+            # print(event)
+            # Handle Notes
+            if isinstance(event, note.Note):
+                symbol = event.pitch.midi
+            # Handle Rests
+            if isinstance(event, note.Rest):
+                symbol = 'r'
+            # Convert note/rest into time series notation
+            steps = int(event.duration.quarterLength / TIME_STEP)
+            
+            for step in range(steps):
+                if step == 0:
+                    encoded_song.append(symbol)
+                else:
+                    encoded_song.append('_')
+                    
+        encoded_song = " ".join(map(str, encoded_song))
+        # print(encoded_song)
+        return encoded_song
+    
+    def _save_song_into_textfile(self, save_path, encode_song):
+        with open(save_path, 'w') as fp:
+            fp.write(encode_song)
     
     def _preprocess(self):
         self._load_songs_in_kern()
-        print("Initial Songs Count: ",len(self._get_songs()))
-        new_songs = []
-        for song in self._get_songs():
-            if self._has_acceptable_duration(song) == False:
-                print("Skip!")
-                continue
-            else:
-                print("=" * 40)
-                # self._show_song_parts(song)
-                new_song = self._transpose(_key_signature = self._locate_song_key(song), _song=song)
-                new_songs.append(new_song)
-                print("=" * 40)
-        self._get_songs()[4].show()
-    def _get_songs(self):
-        return self._songs
+        for index, song in enumerate(self._get_songs()):
+            if self._has_acceptable_duration(song):
+                transposed_song = self._transpose(self._locate_song_key(song), song)
+                encode_song = self._encode_song_as_time_series(transposed_song)
+                save_path = operating_system.path.join(SAVE_DIRECTORY, str(index))
+                self._save_song_into_textfile(save_path, encode_song)
     
 if __name__ == "__main__":
     m = MelodyFeatureExtraction(DATASET_PATH)
