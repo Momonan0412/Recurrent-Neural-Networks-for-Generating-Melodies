@@ -1,6 +1,7 @@
 import os as operating_system
 from music21 import converter, note, chord, meter, tempo, pitch, stream, key, interval, bar
 from constants import *
+import json
 
 class MelodyFeatureExtraction:
     def __init__(self, data_path):
@@ -19,12 +20,12 @@ class MelodyFeatureExtraction:
     """
     Hierarchical Structure: In a musical score, elements are typically nested in layers such as parts, measures, and other containers.
     Accessing notes directly through recurse() searches through all levels of the hierarchy, but this can be slow or overly complex.
-    Flattened View: flat.notesAndRests removes the hierarchy, providing a simplified, linear sequence of all note and rest elements in the score or part.
+    Flattened View: flatten().notesAndRests removes the hierarchy, providing a simplified, linear sequence of all note and rest elements in the score or part.
     This makes it easier to loop through the musical content without worrying about nested structures.
     """
     def _has_acceptable_duration(self, song):
         # Access all notes and rests in a flat structure
-        for note in song.flat.notesAndRests:
+        for note in song.flatten().notesAndRests:
             if note.duration.quarterLength not in ACCEPTABLE_DURATIONS:
                 # self._show_songs_parts(song)
                 return False
@@ -67,23 +68,15 @@ class MelodyFeatureExtraction:
                     # if isinstance(element, key.KeySignature):
                     if isinstance(element, key.Key):
                         key_signature = element
-                        break
-                if key_signature:
-                    break
-            if key_signature:
-                self._guess_song_key(song).sharps
-                print(f"Found Key Signature: {key_signature.sharps} sharps")
-                print(f"Guessed Signature: {self._guess_song_key(song).sharps} sharps")
-                print(f"Tonic: {key_signature.tonic.name}")
-                if key_signature.mode == 'major':
-                    print(f"Mode: {key_signature.mode}")
-        if not isinstance(key_signature, key.Key):
-            key_signature = self._guess_song_key(song)
-        return key_signature
+                        return key_signature
+        return self._guess_song_key(song)
         
     """Provides a key `Guess` of the passed song!"""
     def _guess_song_key(self, song):
-        key = song.analyze('key')
+        try:
+            key = song.analyze('key')
+        except:
+            return None
         # print(f"Key: {key}")
         # tonal_certainty_percentage = key.tonalCertainty() * 100
         # print(f"Tonal Certainty: {tonal_certainty_percentage:.1f}%")
@@ -147,7 +140,7 @@ class MelodyFeatureExtraction:
         # List[x,"_"] 8th note
         # List[x] Whole note
         encoded_song = []
-        for event in song.flat.notesAndRests:
+        for event in song.flatten().notesAndRests:
             # print(event)
             # Handle Notes
             if isinstance(event, note.Note):
@@ -168,19 +161,69 @@ class MelodyFeatureExtraction:
         # print(encoded_song)
         return encoded_song
     
-    def _save_song_into_textfile(self, save_path, encode_song):
+    def _save_song_s_into_textfile(self, save_path, _song_s):
         with open(save_path, 'w') as fp:
-            fp.write(encode_song)
+            fp.write(_song_s)
     
     def _preprocess(self):
         self._load_songs_in_kern()
         for index, song in enumerate(self._get_songs()):
             if self._has_acceptable_duration(song):
-                transposed_song = self._transpose(self._locate_song_key(song), song)
+                key_signature = self._locate_song_key(song)
+                if key_signature is None:
+                    continue
+                transposed_song = self._transpose(key_signature, song)
                 encode_song = self._encode_song_as_time_series(transposed_song)
                 save_path = operating_system.path.join(SAVE_DIRECTORY, str(index))
-                self._save_song_into_textfile(save_path, encode_song)
+                self._save_song_s_into_textfile(save_path, encode_song)
+        print("Done!")
     
+    def _load_textfile_into_song(self, text_file_path):
+        with open(text_file_path, 'r') as fp:
+            return fp.read()
+    
+    def _create_single_file_dataset(self):
+        # Training Sequence?
+        data_set_delimiter = " / " * SEQUENCE_LENGTH_DELIMITER
+        songs = ""
+        for i, (dirpath, dirnames, filenames) in enumerate(operating_system.walk(INITIAL_PROCESSED_DATASET_PATH)):
+            for file in filenames:
+                if file.isdigit():
+                    file_path = operating_system.path.join(dirpath, file)
+                    song = self._load_textfile_into_song(file_path)
+                    songs += song + data_set_delimiter
+                    
+        # print(len(songs))
+        songs_dataset = songs[:-1] # Removes The " " because of the `data_set_delimiter`
+        # print(len(songs))
+        self._save_song_s_into_textfile(DATASET_FILE_PATH, songs_dataset)
+        return songs_dataset
+    
+    def _mapping_vocabulary_to_json(self, mapping_vocabulary):
+        with open(MAPPING_PATH, 'w') as fp:
+            json.dump(mapping_vocabulary, fp, indent=4)
+    
+    def _create_map_for_songs(self, songs):
+        # Create Map
+        mapping_vocabulary = {}
+        # Identify Vocabularies
+        songs = songs.split()
+        vocabularies = list(set(songs))
+        
+        # print(vocabularies)
+                
+        # Map the Vocabularies
+        for i, vocabulary in enumerate(vocabularies):
+            mapping_vocabulary[vocabulary] = i
+            
+        # print(mapping_vocabulary)        
+        self._mapping_vocabulary_to_json(mapping_vocabulary)
+            
 if __name__ == "__main__":
-    m = MelodyFeatureExtraction(DATASET_PATH)
+    m = MelodyFeatureExtraction(KERN_DATASET_PATH)
+    print("Preprocessing....")
     m._preprocess()
+    print("Combining Data....")
+    m._create_single_file_dataset()
+    print("Mapping Data....")
+    m._create_map_for_songs(m._create_single_file_dataset())

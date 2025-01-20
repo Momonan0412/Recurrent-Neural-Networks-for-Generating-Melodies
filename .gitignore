@@ -1,5 +1,7 @@
 # My Notes
-
+Processed Dataset/Combined Dataset/*
+Processed Dataset/*
+mapped_vocabularies.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
