@@ -1,7 +1,7 @@
 import os as operating_system
 from music21 import converter, note, chord, meter, tempo, pitch, stream, key, interval, bar
 from constants import *
-import json
+from data_handler import StaticDataHandler
 
 class MelodyFeatureExtraction:
     def __init__(self, data_path):
@@ -161,10 +161,6 @@ class MelodyFeatureExtraction:
         # print(encoded_song)
         return encoded_song
     
-    def _save_song_s_into_textfile(self, save_path, _song_s):
-        with open(save_path, 'w') as fp:
-            fp.write(_song_s)
-    
     def _preprocess(self):
         self._load_songs_in_kern()
         for index, song in enumerate(self._get_songs()):
@@ -175,12 +171,8 @@ class MelodyFeatureExtraction:
                 transposed_song = self._transpose(key_signature, song)
                 encode_song = self._encode_song_as_time_series(transposed_song)
                 save_path = operating_system.path.join(SAVE_DIRECTORY, str(index))
-                self._save_song_s_into_textfile(save_path, encode_song)
+                # StaticDataHandler._save_song_s_into_textfile(save_path, encode_song)
         print("Done!")
-    
-    def _load_textfile_into_song(self, text_file_path):
-        with open(text_file_path, 'r') as fp:
-            return fp.read()
     
     def _create_single_file_dataset(self):
         # Training Sequence?
@@ -190,18 +182,14 @@ class MelodyFeatureExtraction:
             for file in filenames:
                 if file.isdigit():
                     file_path = operating_system.path.join(dirpath, file)
-                    song = self._load_textfile_into_song(file_path)
+                    song = StaticDataHandler._load_textfile_into_song(file_path)
                     songs += song + data_set_delimiter
                     
         # print(len(songs))
         songs_dataset = songs[:-1] # Removes The " " because of the `data_set_delimiter`
         # print(len(songs))
-        self._save_song_s_into_textfile(DATASET_FILE_PATH, songs_dataset)
+        StaticDataHandler._save_song_s_into_textfile(DATASET_FILE_PATH, songs_dataset)
         return songs_dataset
-    
-    def _mapping_vocabulary_to_json(self, mapping_vocabulary):
-        with open(MAPPING_PATH, 'w') as fp:
-            json.dump(mapping_vocabulary, fp, indent=4)
     
     def _create_map_for_songs(self, songs):
         # Create Map
@@ -217,13 +205,13 @@ class MelodyFeatureExtraction:
             mapping_vocabulary[vocabulary] = i
             
         # print(mapping_vocabulary)        
-        self._mapping_vocabulary_to_json(mapping_vocabulary)
+        StaticDataHandler._mapping_vocabulary_to_json(mapping_vocabulary)
             
 if __name__ == "__main__":
     m = MelodyFeatureExtraction(KERN_DATASET_PATH)
     print("Preprocessing....")
     m._preprocess()
-    print("Combining Data....")
-    m._create_single_file_dataset()
-    print("Mapping Data....")
-    m._create_map_for_songs(m._create_single_file_dataset())
+    # print("Combining Data....")
+    # m._create_single_file_dataset()
+    # print("Mapping Data....")
+    # m._create_map_for_songs(m._create_single_file_dataset())
