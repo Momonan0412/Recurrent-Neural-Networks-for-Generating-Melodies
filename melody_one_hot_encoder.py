@@ -1,6 +1,8 @@
+import keras.api
 from constants import *
 from data_handler import *
 import numpy as np
+import keras
 class MusicOneHotEncoder:
     def __init__(self):
         self._mappings = StaticDataHandler._load_textfile_into_song(MAPPING_PATH)
@@ -28,7 +30,7 @@ class MusicOneHotEncoder:
         #     if integer_songs[i] != mappings[symbol]:
         #         print("Does Not Match!")
         
-        return integer_songs
+        self._integer_songs = integer_songs
         
     """
     Example with a sequence length of 3:
@@ -58,7 +60,8 @@ class MusicOneHotEncoder:
     """
     def _generate_training_sequences(self):
         # 
-        integer_songs = self._convert_songs_to_int()
+        self._convert_songs_to_int()
+        integer_songs = self._integer_songs
         # e.g., 
         # len(integer_songs) = 100
         # SEQUENCE_LENGTH = 64
@@ -72,7 +75,9 @@ class MusicOneHotEncoder:
         for i in range(num_sequences):
             data_inputs.append(integer_songs[i: i + SEQUENCE_STEP])
             data_targets.append(integer_songs[i + SEQUENCE_STEP])
-        
+            
+        self._data_inputs = data_inputs
+        self._data_targets = data_targets
         # print(np.array(data_inputs).shape)
         # print(data_inputs[0])
         # print(data_inputs[2])
@@ -92,14 +97,29 @@ class MusicOneHotEncoder:
     ]
     """
     def one_hot_encode(self): # keras.utils.to_categorical()  
-      pass
-    def data_inputs_max(self):
-      # Testing
-      test_data = [[1, 2, 3, 5], [5, 2, 3, 4]]
-      max_input = max(max(seq) for seq in test_data)
-      result = []
-      print(max_input)
-      pass
+      
+      max_input = self._data_inputs_max()
+      num_categories = max_input + 1
+      sequences = np.array(self._data_inputs)
+        
+      result = np.zeros((len(sequences), len(sequences[0]), num_categories), dtype=np.uint8)
+        
+      for i, sequence in enumerate(sequences):
+          for j, category in enumerate(sequence):
+              result[i, j, category] = 1
+      
+      input = result
+      target = np.array(self._data_targets)
+      
+      return input, target
+      
+    def _data_inputs_max(self):
+      max_input = max(max(seq) for seq in self._data_inputs)
+      return max_input
+    
 if __name__ == "__main__":
     m = MusicOneHotEncoder()
-    m.data_inputs_max()
+    m._generate_training_sequences()
+    inputs, targets = m.one_hot_encode()
+    print(inputs.shape)
+    print(targets.shape)
