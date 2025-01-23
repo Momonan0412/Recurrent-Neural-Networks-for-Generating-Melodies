@@ -1,11 +1,9 @@
-import keras.api
 from constants import *
 from data_handler import *
 import numpy as np
-import keras
 class MusicOneHotEncoder:
     def __init__(self):
-        self._mappings = StaticDataHandler._load_textfile_into_song(MAPPING_PATH)
+        self._mappings = StaticDataHandler._load_jsonfile_into_song(MAPPING_PATH)
         self._songs = StaticDataHandler._load_textfile_into_song(DATASET_FILE_PATH)
         pass
     def _convert_songs_to_int(self):
@@ -13,7 +11,8 @@ class MusicOneHotEncoder:
         # Cast songs string to a list
         
         mappings = self._mappings
-        mappings = json.loads(mappings)
+        # print(type(mappings))
+        # mappings = json.loads(mappings)
         songs = self._songs
         songs = songs.split()
         
@@ -128,5 +127,6 @@ class MusicOneHotEncoder:
     
 if __name__ == "__main__":
     m = MusicOneHotEncoder()
-    m._generate_training_sequences()
-    m._set_data_and_save_h5file()
+    m._convert_songs_to_int()
+    # m._generate_training_sequences()
+    # m._set_data_and_save_h5file()
