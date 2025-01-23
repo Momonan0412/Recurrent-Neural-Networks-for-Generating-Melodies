@@ -117,9 +117,16 @@ class MusicOneHotEncoder:
       max_input = max(max(seq) for seq in self._data_inputs)
       return max_input
     
+    def _set_data_and_save_h5file(self):
+      inputs, targets = m.one_hot_encode()
+      # Guide: data_name, data_set, data_type for `**kwargs`
+      h5_config = [
+          {'data_name': "inputs", 'data_set': inputs, 'data_type': np.uint8}, # Inputs (one-hot encoded): np.uint8 is optimal.
+          {'data_name': "targets", 'data_set': targets, 'data_type': np.uint8}, # Target's max value does not exceed 255.
+      ]
+      StaticDataHandler._data_to_h5py(H5PY_PATH, config=h5_config)
+    
 if __name__ == "__main__":
     m = MusicOneHotEncoder()
     m._generate_training_sequences()
-    inputs, targets = m.one_hot_encode()
-    print(inputs.shape)
-    print(targets.shape)
+    m._set_data_and_save_h5file()

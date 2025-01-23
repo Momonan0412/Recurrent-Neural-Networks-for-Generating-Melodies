@@ -2,6 +2,7 @@
 Processed Dataset/Combined Dataset/*
 Processed Dataset/*
 mapped_vocabularies.json
+dataset.h5
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

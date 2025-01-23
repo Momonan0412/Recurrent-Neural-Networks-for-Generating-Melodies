@@ -16,3 +16,4 @@ TIME_STEP = 0.25                                      # 16th Note, using the #2 
 SEQUENCE_LENGTH_DELIMITER = 64                        # Doesn't directly influence how the LSTM/RNN works in terms of sequence processing.
 SEQUENCE_STEP = 64                                    # This Matters WTF?
 MAPPING_PATH = "mapped_vocabularies.json"             # Path to store the mapped vocabularies into json.
+H5PY_PATH = "dataset.h5"                              # Path to store the h5 file
