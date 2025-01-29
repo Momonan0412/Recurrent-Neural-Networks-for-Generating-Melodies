@@ -116,8 +116,15 @@ class MusicOneHotEncoder:
       max_input = max(max(seq) for seq in self._data_inputs)
       return max_input
     
+    # def _set_data_and_save_jsonfile(self):
+    #   inputs, targets = m.one_hot_encode()
+    #   data = {
+    #     "inputs" : inputs.tolist(),
+    #     "targets" : targets
+    #   }
+    #   StaticDataHandler._data_to_json_file(JSON_PATH, data)
     def _set_data_and_save_h5file(self):
-      inputs, targets = m.one_hot_encode()
+      inputs, targets = self.one_hot_encode()
       # Guide: data_name, data_set, data_type for `**kwargs`
       h5_config = [
           {'data_name': "inputs", 'data_set': inputs, 'data_type': np.uint8}, # Inputs (one-hot encoded): np.uint8 is optimal.
@@ -128,5 +135,5 @@ class MusicOneHotEncoder:
 if __name__ == "__main__":
     m = MusicOneHotEncoder()
     m._convert_songs_to_int()
-    # m._generate_training_sequences()
-    # m._set_data_and_save_h5file()
+    m._generate_training_sequences()
+    m._set_data_and_save_h5file()

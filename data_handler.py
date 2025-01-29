@@ -17,7 +17,7 @@ class StaticDataHandler:
         with open(MAPPING_PATH, 'w') as fp:
             json.dump(mapping_vocabulary, fp, indent=4)
     @staticmethod
-    def _save_song_s_into_textfile(self, save_path, _song_s):
+    def _save_song_s_into_textfile(save_path, _song_s):
         with open(save_path, 'w') as fp:
             fp.write(_song_s)        
     @staticmethod
@@ -40,6 +40,10 @@ class StaticDataHandler:
                     h5_config['data_name'], 
                     data=np.array(h5_config['data_set'], dtype=h5_config['data_type'])
                 )
+    @staticmethod
+    def _data_to_json_file(json_path, data):
+        with open(json_path, 'w') as fp:
+            json.dump(data, fp, indent=4)
     @staticmethod
     def _load_h5py_data(h5py_path):
         with h5py.File(h5py_path, 'r') as h5_file:

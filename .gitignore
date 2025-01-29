@@ -3,11 +3,14 @@ Processed Dataset/Combined Dataset/*
 Processed Dataset/*
 mapped_vocabularies.json
 dataset.h5
+# Others
+*:Zone.Identifier
+*.Identifier
+venv*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
 # C extensions
 *.so
 

@@ -11,8 +11,9 @@ class MelodyFeatureExtraction:
         songs = []
         for i, (dirpath, dirnames, filenames) in enumerate(operating_system.walk(self._data_path)):
             for file in filenames:
-                if ".krn" in file:
+                if ".krn" in file and not ".krn:" in file:
                     path = operating_system.path.join(dirpath, file)
+                    # print(path)
                     song = converter.parse(path)
                     songs.append(song)
         self._songs = songs
@@ -168,10 +169,12 @@ class MelodyFeatureExtraction:
                 key_signature = self._locate_song_key(song)
                 if key_signature is None:
                     continue
+                # self._get_song_time_signature(song)
                 transposed_song = self._transpose(key_signature, song)
                 encode_song = self._encode_song_as_time_series(transposed_song)
                 save_path = operating_system.path.join(SAVE_DIRECTORY, str(index))
-                # StaticDataHandler._save_song_s_into_textfile(save_path, encode_song)
+                # print(save_path)
+                StaticDataHandler._save_song_s_into_textfile(save_path, encode_song)
         print("Done!")
     
     def _create_single_file_dataset(self):
@@ -211,7 +214,7 @@ if __name__ == "__main__":
     m = MelodyFeatureExtraction(KERN_DATASET_PATH)
     print("Preprocessing....")
     m._preprocess()
-    # print("Combining Data....")
-    # m._create_single_file_dataset()
-    # print("Mapping Data....")
-    # m._create_map_for_songs(m._create_single_file_dataset())
+    print("Combining Data....")
+    m._create_single_file_dataset()
+    print("Mapping Data....")
+    m._create_map_for_songs(m._create_single_file_dataset())
