@@ -45,3 +45,10 @@ NUM_UNITS_OR_NUMBER_OF_NEURONS = [128, 64, 64]       # Number of neurons
 LEARNING_RATE = 0.0001                                # Learning Rate... dot .. dot .
 BATCH_SIZE = 32                                       # Before backpropagation this should be met first
 NUMBER_EPOCH = 50 
+
+MODEL_PATH = "melody_generation_model_complete.keras"
+
+SA_TEMPERATURE = 100
+SA_COOLING_RATE = 0.95
+
+TEMPERATURE_SAMPLING = 0.7

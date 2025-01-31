@@ -10,7 +10,7 @@ class StaticDataHandler:
             return fp.read()
     @staticmethod
     def _load_jsonfile_into_song(text_file_path):
-        with open(MAPPING_PATH, 'r') as fp:
+        with open(text_file_path, 'r') as fp:
             return json.load(fp)
     @staticmethod
     def _mapping_vocabulary_to_json(mapping_vocabulary):
@@ -84,3 +84,19 @@ class StaticDataHandler:
             "targets": input_data["targets"][test_indices]
         }
         return _train_data, _test_data
+    @staticmethod
+    def _one_hot_encode(sequence_data, num_categories):
+        
+        # print("One ", sequence_data)
+        # print("Two ", sequence_data[0])
+        
+        result = np.zeros((len(sequence_data), num_categories), dtype=np.uint8)
+        
+        # print(sequence_data[0])
+        # result[0][sequence_data[0]] = 1
+        # print(len(result[0]))
+        
+        for i, category in enumerate(sequence_data):
+            result[i][category] = 1
+        
+        return result
