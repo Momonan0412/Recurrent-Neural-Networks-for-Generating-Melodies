@@ -51,4 +51,9 @@ MODEL_PATH = "melody_generation_model_complete.keras"
 SA_TEMPERATURE = 100
 SA_COOLING_RATE = 0.95
 
-TEMPERATURE_SAMPLING = 0.7
+TEMPERATURE_SAMPLING = 0.3
+
+FORMAT_MIDI = 'midi'
+FILE_NAME_MIDI = 'Generated MIDI/melody.mid'
+
+GENERATED_MELODY_PATH = "Generated Melody/generated_melody.json"

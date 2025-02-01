@@ -93,7 +93,7 @@ class MelodyGenerator:
     
 if __name__ == "__main__":
     mg = MelodyGenerator()
-    seed = "64 _ 69 _ _ _ 71 _ 72"
+    seed = "67 _ 67 _ 67 _ _ 65 64 _ 64 _ 64 _ _"
     # print(mg._get_mapped_vocabularies())
     melody = mg._generate_melody(seed=seed,num_of_steps=500)
-    print(melody)
+    StaticDataHandler._melody_list_to_json(melody)

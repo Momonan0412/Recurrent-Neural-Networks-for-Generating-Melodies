@@ -17,6 +17,10 @@ class StaticDataHandler:
         with open(MAPPING_PATH, 'w') as fp:
             json.dump(mapping_vocabulary, fp, indent=4)
     @staticmethod
+    def _melody_list_to_json(melody_list):
+        with open(GENERATED_MELODY_PATH, 'w') as fp:
+            json.dump(melody_list, fp)
+    @staticmethod
     def _save_song_s_into_textfile(save_path, _song_s):
         with open(save_path, 'w') as fp:
             fp.write(_song_s)        
